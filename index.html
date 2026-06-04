@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="lv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Julianas Gomoņukas patstāvīgais darbs par datorikas studenta nedēļu šķērsgriezumā.">
+    <title>Datorikas studenta nedēļa šķērsgriezumā</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img class="page-decor page-decor-left" src="assets/decor_2.png" alt="Rozas alstromērijas" aria-hidden="true">
+    <img class="page-decor page-decor-right" src="assets/decor_1.png" alt="Magnolijas ziedi" aria-hidden="true">
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Uz sākumu">
+        <img
+          src="assets/site_logo.png"
+          data-light-src="assets/site_logo.png"
+          data-dark-src="assets/site_logo_dark.png"
+          alt="Juliana Gomoņuka logotips"
+        >
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Galvenā navigācija">
+        <a class="is-active" href="#planosana">Plānošana</a>
+        <a href="#lekcijas">Lekcijas</a>
+        <a href="#projekti">Projekti</a>
+        <a href="#sadarbiba">Sadarbība</a>
+        <a href="#atputa">Atpūta</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Atvērt navigāciju" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Pārslēgt gaišo un tumšo režīmu" aria-pressed="false">
+        <svg class="theme-icon theme-icon-light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/>
+        </svg>
+        <svg class="theme-icon theme-icon-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="M40-440v-80h240v80H40Zm270-154-84-84 56-56 84 84-56 56Zm130-86v-240h80v240h-80Zm210 86-56-56 84-84 56 56-84 84Zm30 154v-80h240v80H680Zm-285 45q-35-35-35-85t35-85q35-35 85-35t85 35q35 35 35 85t-35 85q-35 35-85 35t-85-35Zm283 169-84-84 56-56 84 84-56 56Zm-396 0-56-56 84-84 56 56-84 84ZM440-40v-240h80v240h-80Z"/>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-title">
+          <p class="author">Juliana Gomoņuka</p>
+          <h1 id="hero-title">Datorikas studenta nedēļa šķērsgriezumā</h1>
+        </div>
+        <div class="hero-grid">
+          <figure class="hero-image">
+            <img src="assets/hero_image.jpg" alt="Autora veidots noskaņas attēls">
+          </figure>
+          <div class="hero-copy">
+            <div class="section-icon" aria-hidden="true">✿</div>
+            <p>
+              Šī vietne ir personīgs stāsts par vienu datorikas studentes nedēļu pavasara semestrī: no plānu veidošanas un lekcijām līdz mājas darbiem,
+              sadarbībai ar koleģiem un jēgpilnai atpūtai.
+            </p>
+          </div>
+          <div class="hero-copy secondary">
+            <div class="section-icon" aria-hidden="true">✿</div>
+            <p>
+              Studiju nedēļa nekad nav tikai lekciju saraksts vai izpildāmo darbu plāns.
+              Tā sastāv no mazām izvēlēm, pēkšņām idejām, garām sarunām, veiksmīgi atrastiem risinājumiem un brīžiem, kad viss šķiet sarežģītāk nekā sākumā. 
+              Katrā dienā ir kaut kas, ko atcerēties, pārdomāt un ar ko padalīties.
+            </p>
+          </div>
+          <figure class="hero-image hero-image-wide">
+            <img src="assets/hero_image_2.jpg" alt="Autora veidota ievada ilustrācija">
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-section split split-right" id="planosana" aria-labelledby="planosana-title">
+        <div class="section-text">
+          <div class="numbered-title">
+            <span class="section-number">1</span>
+            <h2 id="planosana-title">Nedēļas plānošana un organizācija</h2>
+          </div>
+          <p>
+          Katra studiju nedēļa man sākas ar plānošanu, jo bez skaidra pārskata par tuvākajām dienām es ātri sāku justies nemierīgi. Man ir svarīgi zināt, kas mani sagaida, kādi termiņi tuvojas un kurās dienās būs lielāks noslogojums. Tajā pašā laikā es cenšos neplānot pārāk tālu uz priekšu, jo pārāk detalizēts ilgtermiņa plāns reizēm nevis palīdz, bet novērš uzmanību un rada lieku spriedzi. Vislabāk nedēļu izdodas saplānot mājās, mierīgā un ērtā atmosfērā. Tad es sadalu uzdevumus pa dienām, cenšoties būt reālistiska un neatņemt sev vietu atpūtai, izklaidei un pašizaugsmei. Studiju laikā esmu iemācījusies diezgan precīzi novērtēt darba apjomu un savas iespējas. Tāpēc plānā vienmēr atstāju laiku kļūdu labošanai, neparedzētiem darbiem un brīžiem, kad vienkārši vajag ievilkt elpu.
+          </p>
+        </div>
+        <div class="image-grid planning-images">
+          <figure class="content-image planning-image planning-image-top">
+            <img src="assets/planosana-1.jpg" alt="Plīša kapibara skatās klēpjdatora ekrānā">
+          </figure>
+          <figure class="content-image planning-image planning-image-bottom">
+            <img src="assets/planosana-2.jpg" alt="Plīša kapibara virs dienasgrāmatas tur zaļu pildspalvu">
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-section split split-left" id="lekcijas" aria-labelledby="lekcijas-title">
+        <div class="image-grid four">
+          <figure class="content-image">
+            <img src="assets/lekcijas-1.jpg" alt="Datora ekrānā atvērta grafikas programma ar veidotu 3D ziedu poda modeli">
+          </figure>
+          <figure class="content-image">
+            <img src="assets/lekcijas-2.jpg" alt="Datora ekrānā redzams studiju darbs ar datubāzes modeļiem">
+          </figure>
+          <figure class="content-image">
+            <img src="assets/lekcijas-3.jpg" alt="Uz papīra ar roku zīmēta algoritma shēma ar burtiem, stāvokļiem un pārejām">
+          </figure>
+          <figure class="content-image">
+            <img src="assets/lekcijas-4.jpg" alt="Universitātes auditorijas ieeja ar uzrakstu Alfa un atvērtām durvīm">
+          </figure>
+        </div>
+        <div class="section-text">
+          <div class="numbered-title">
+            <span class="section-number">2</span>
+            <h2 id="lekcijas-title">Lekcijas un patstāvīgā mācīšanās</h2>
+          </div>
+          <p>
+            Lekcijas man ir labs veids, kā sākt dienu aktīvāk un apvienot mācīšanos ar satikšanos ar draugiem. Godīgi sakot, universitātē es nāku ne tikai pēc zināšanām, bet arī pēc tās sajūtas, ka studiju process notiek kopā ar tuviem cilvēkiem. Sarunas pirms un pēc lekcijām, un, nemelošu, dažreiz arī lekcijas laikā, bieži palīdz paskatīties uz uzdevumiem vieglāk. Tomēr reizēm mēs tik ļoti aizrunājamies, ka dienas beigās kļūst skaidrs: īstā mācīšanās vēl tikai būs jānoorganizē mājās. Tāpēc istais mācību process man parasti sākas pēc atgriešanās mājās. Tur es varu mierīgi, bez steigas un liekiem traucēkļiem, pārskatīt lekciju materiālus, sakārtot pierakstus un izpildīt uzdevumus par dienas tēmu. Šāds ritms man šķiet dabisks: universitāte dod motivāciju, vidi un komunikāciju, bet mājas palīdz koncentrēties un patiešām iedziļināties vielā.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section projects" id="projekti" aria-labelledby="projekti-title">
+        <div class="numbered-title centered">
+          <span class="section-number">3</span>
+          <h2 id="projekti-title">Mājasdarbi un projekti</h2>
+        </div>
+        <div class="project-carousel">
+          <div class="project-cards" aria-label="Projektu ilustrāciju vietas">
+            <article class="project-card is-active">
+              <figure class="project-image">
+                <img src="assets/projekti-1.jpg" alt="Plīša kapibara pie datora ekrāna, kurā redzams mācību materiāls par GitHub pull request zariem">
+              </figure>
+              <p>
+                Mājasdarbi man ir viens no labākajiem veidiem, kā pārbaudīt, cik labi lekcijā dzirdētais patiesībā ir palicis atmiņā. Teorijā bieži šķiet, ka viss ir skaidrs, bet brīdī, kad uzdevums jāizpilda pašai, uzreiz parādās vietas, kurās vēl trūkst izpratnes. Datorikas studijās tas ir īpaši jūtams, jo ar teoriju bez prakses tālu netikt.
+              </p>
+            </article>
+            <article class="project-card">
+              <figure class="project-image">
+                <img src="assets/projekti-2.jpg" alt="Plīša kapibara pie klēpjdatora ekrāna ar atvērtu mājaslapas moodboardu un krāsu paletēm">
+              </figure>
+              <p>
+                Projektos, tāpat kā arī mazākos mājasdarbos, man vissvarīgākā šķiet spēja godīgi novērtēt savus spēkus un termiņus. Pat neliels uzdevums var kļūt daudz sarežģītāks, ja to atliek līdz pēdējam brīdim. Studiju laikā esmu sapratusi, ka labāk sākt agrāk un virzīties uz priekšu pakāpeniski, nevis pēdējā vakarā mēģināt izglābt visu darbu uzreiz. Tas palīdz saudzēt nervus un nepiedzīvot brīdi, kad e-studiju iesniegšanas taimeris jau rāda biedējoši sarkanu fonu.
+              </p>
+            </article>
+            <article class="project-card">
+              <figure class="project-image">
+                <img src="assets/projekti-3.jpg" alt="Plīša kapibara blakus kladei ar pierakstiem un datoram ar atvērtu kalkulatoru">
+              </figure>
+              <p>
+                Man patīk, ka patstāvīgais darbs universitātes studijās aizņem tik lielu daļu laika, jo, manuprāt, tikai pašam meklējot zināšanas, pildot uzdevumus un veidojot projektus no nulles ar savām rokām, ir iespējams kļūt par īstu savas jomas profesionāli.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="carousel-dots" aria-label="Projektu pārslēgšana">
+          <button class="active" type="button" aria-label="Rādīt 1. projektu" aria-pressed="true"></button>
+          <button type="button" aria-label="Rādīt 2. projektu" aria-pressed="false"></button>
+          <button type="button" aria-label="Rādīt 3. projektu" aria-pressed="false"></button>
+        </div>
+      </section>
+
+      <section class="content-section collaboration" id="sadarbiba" aria-labelledby="sadarbiba-title">
+        <div class="floating-placeholders" aria-label="Vieta sadarbības ilustrācijām">
+          <figure class="content-image collaboration-image">
+            <img src="assets/sadarbiba-1.jpg" alt="Divi studenti rāda universitātes pasākuma dalībnieku kartītes">
+          </figure>
+          <figure class="content-image collaboration-image">
+            <img src="assets/sadarbiba-2.jpg" alt="Studenti pie galda piedalās kopīgā radošā aktivitātē">
+          </figure>
+        </div>
+        <div class="section-text narrow">
+          <div class="numbered-title centered">
+            <span class="section-number">4</span>
+            <h2 id="sadarbiba-title">Sadarbība un studiju vide</h2>
+          </div>
+          <p>
+            Studiju vide man nav tikai auditorijas, e-studijas un mapes ar materiāliem. Liela daļa no tās ir cilvēki, ar kuriem kopā paiet studiju ikdiena. Man ļoti svarīga ir draudzīga atmosfēra kursā, jo tad arī sarežģītāki uzdevumi nešķiet tik biedējoši. Starp lekcijām mēs bieži sarunājamies, jokojam, spēlējam spēles vai vienkārši pavadām laiku kopā, un tieši šie mazie brīži padara studijas dzīvākas. Tajā pašā laikā laba sadarbība nozīmē arī spēju kļūt nopietniem tad, kad tas patiešām ir nepieciešams. Ja tuvojas termiņš vai jāsaprot sarežģīts uzdevums, mēs varam pārslēgties no jokiem uz darbu, uzdot jautājumus un palīdzēt viens otram. Manuprāt, tieši šis līdzsvars starp vieglumu un atbildību veido patīkamu studiju vidi.
+          </p>
+        </div>
+        <div class="floating-placeholders bottom" aria-hidden="true">
+          <figure class="content-image collaboration-image">
+            <img src="assets/sadarbiba-3.jpg" alt="Studenti ēdnīcā pie galda sarunājas">
+          </figure>
+          <figure class="content-image collaboration-image">
+            <img src="assets/sadarbiba-4.jpg" alt="Divi studenti auditorijā smaida un ar rokām rāda sirds formu">
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-section rest" id="atputa" aria-labelledby="atputa-title">
+        <div class="section-text">
+          <div class="numbered-title">
+            <span class="section-number">5</span>
+            <h2 id="atputa-title">Atpūta un enerģijas atjaunošana</h2>
+          </div>
+          <p>
+            Atpūta studiju nedēļā nav balva tikai pēc visu darbu pabeigšanas, bet priekšnoteikums tam, lai darbs vispār būtu kvalitatīvs. Ja pārāk ilgi sēžu pie viena uzdevuma, uzmanība kļūst šaurāka un kļūdas sāk atkārtoties. Tāpēc cenšos ieplānot īsas pauzes, pastaigu, mierīgu maltīti vai brīdi bez ekrāna. Šie pārtraukumi palīdz atgriezties pie darba ar skaidrāku skatienu. Īpaši intensīvās nedēļās atpūta nozīmē arī robežu noteikšanu: ne visu var izdarīt vienā vakarā, un ne katram uzdevumam vajadzīgs perfekts rezultāts pirmajā mēģinājumā. Enerģiju palīdz atjaunot arī lietas, kas nav tieši saistītas ar studijām. Man ir svarīgi atrast laiku sportam, rūpēm par sevi, normālam uzturam un brīžiem ar tuviem cilvēkiem. Pēc sarežģītiem uzdevumiem smadzenēm vajag iespēju pārslēgties, nevis visu laiku palikt tajā pašā darba režīmā. Pastaiga, treniņš, mierīga maltīte vai saruna ar kādu tuvu cilvēku palīdz atgūt līdzsvaru un nepazaudēt interesi par studijām ilgākā laikā.
+          </p>
+        </div>
+        <div class="stacked-images" aria-label="Vieta atpūtas ilustrācijām">
+          <figure class="content-image stack small one">
+            <img src="assets/atputa-2.jpg" alt="Students ar saulesbrillēm auditorijā atdarina tēlu no attēla, kas redzams klēpjdatora ekrānā">
+          </figure>
+          <figure class="content-image stack large">
+            <img src="assets/atputa-center.jpg" alt="Kafijas tase ar latte art un maizīte uz šķīvja kafejnīcas galdā">
+          </figure>
+          <figure class="content-image stack small two">
+            <img src="assets/atputa-3.jpg" alt="Sieviete stāv pie jūras saulrieta laikā, fonā redzami viļņi un oranžas debesis">
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h2>Datorikas studenta nedēļa šķērsgriezumā</h2>
+        <p>
+          Personīgs ieskats pavasara semestra ikdienā, kur studijas, projekti, sadarbība un atpūta veido vienu ritmu.
+        </p>
+      </div>
+      <div>
+        <h2>Sadaļas</h2>
+        <ul>
+          <li><a href="#planosana">Plānošana</a></li>
+          <li><a href="#lekcijas">Lekcijas</a></li>
+          <li><a href="#projekti">Projekti</a></li>
+          <li><a href="#sadarbiba">Sadarbība</a></li>
+          <li><a href="#atputa">Atpūta</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Saites</h2>
+        <div class="social-links">
+          <a href="https://github.com/Gomonuka" aria-label="GitHub saite">GH</a>
+        </div>
+      </div>
+      <p class="copyright">Juliana Gomoņuka 2025</p>
+    </footer>
+
+    <script>
+      const button = document.querySelector(".theme-toggle");
+      const menuButton = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".main-nav");
+      const brandLink = document.querySelector(".brand");
+      const logo = document.querySelector(".brand img");
+      const savedTheme = localStorage.getItem("theme");
+      const updateLogo = (isDark) => {
+        logo.src = isDark ? logo.dataset.darkSrc : logo.dataset.lightSrc;
+      };
+
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        button.setAttribute("aria-pressed", "true");
+        updateLogo(true);
+      }
+
+      button.addEventListener("click", () => {
+        const isDark = document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        button.setAttribute("aria-pressed", String(isDark));
+        updateLogo(isDark);
+      });
+
+      brandLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        history.replaceState(null, "", window.location.pathname);
+      });
+
+      const navLinks = [...document.querySelectorAll(".main-nav a")];
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      const setActiveLink = (id) => {
+        navLinks.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+        });
+      };
+
+      const updateActiveLink = () => {
+        const viewportMiddle = window.innerHeight / 2;
+        const closestSection = sections.reduce((closest, section) => {
+          const rect = section.getBoundingClientRect();
+          const sectionMiddle = rect.top + rect.height / 2;
+          const distance = Math.abs(sectionMiddle - viewportMiddle);
+
+          return distance < closest.distance ? { id: section.id, distance } : closest;
+        }, { id: sections[0]?.id, distance: Number.POSITIVE_INFINITY });
+
+        if (closestSection.id) {
+          setActiveLink(closestSection.id);
+        }
+      };
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          setActiveLink(link.getAttribute("href").slice(1));
+          menu.classList.remove("is-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Atvērt navigāciju");
+        });
+      });
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Aizvērt navigāciju" : "Atvērt navigāciju");
+      });
+
+      updateActiveLink();
+      window.addEventListener("scroll", updateActiveLink, { passive: true });
+      window.addEventListener("resize", updateActiveLink);
+
+      const projectCards = [...document.querySelectorAll(".project-card")];
+      const projectDots = [...document.querySelectorAll(".carousel-dots button")];
+
+      const setActiveProject = (index) => {
+        projectCards.forEach((card, cardIndex) => {
+          card.classList.toggle("is-active", cardIndex === index);
+        });
+
+        projectDots.forEach((dot, dotIndex) => {
+          const isActive = dotIndex === index;
+          dot.classList.toggle("active", isActive);
+          dot.setAttribute("aria-pressed", String(isActive));
+        });
+      };
+
+      projectDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => setActiveProject(index));
+      });
+    </script>
+  </body>
+</html>
