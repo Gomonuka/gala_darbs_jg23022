@@ -740,7 +740,8 @@ p {
     flex-wrap: wrap;
     gap: 12px;
     min-height: 72px;
-    padding-block: 10px;
+    padding-block: 0;
+    background: var(--bg);
   }
 
   .menu-toggle {
